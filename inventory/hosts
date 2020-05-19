@@ -3,7 +3,7 @@ all:
     frontends:
       hosts:
         frontend1:
-          ansible_host: frontend1.{{ GUID }}.internal
+          ansible_host: "frontend1.{{ GUID }}.internal"
     apps:
       hosts:
         app1:
