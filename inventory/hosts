@@ -13,4 +13,4 @@ all:
     appdbs:
       hosts:
         appdb1:
-          ansible_host:appdb1.{{ GUID }}.internal
+          ansible_host: appdb1.{{ GUID }}.internal
