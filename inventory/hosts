@@ -1,16 +1,9 @@
-all:
-  children:
-    frontends:
-      hosts:
-        frontend1:
-          ansible_host: "frontend1.{{ GUID }}.internal"
-    apps:
-      hosts:
-        app1:
-          ansible_host: app1."{{ GUID }}".internal
-        app2:
-          ansible_host: app2.$GUID.internal
-    appdbs:
-      hosts:
-        appdb1:
-          ansible_host: appdb1.{{ GUID }}.internal
+[frontends]
+frontend1 ansible_host=frontend1.86e2.internal
+
+[apps]
+app1 ansible_host=app1.86e2.internal
+app2 ansible_host=app2.86e2.internal
+
+[appdbs]
+appdb1 ansible_host=appdb1.86e2.internal
