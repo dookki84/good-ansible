@@ -34,4 +34,10 @@
       file:
         path: /tmp/index.html
         state: absent
-...
+
+
+    - name: Remove Data Files
+      file:
+        path: /var/lib/pgsql/data/
+        state: absent
+      ignore_errors: true
